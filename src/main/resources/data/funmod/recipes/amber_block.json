@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "funmod:amber"
+    }
+  },
+  "result": {
+    "item": "funmod:amber_block"
+  }
+}

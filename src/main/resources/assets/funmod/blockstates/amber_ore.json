@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "" : {"model": "funmod:block/amber_ore"}
+  }
+}
