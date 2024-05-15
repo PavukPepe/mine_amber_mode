@@ -1,5 +1,7 @@
 package net.pavuk.funmod.item;
 
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,16 +34,20 @@ public class moditems {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
 
     public static final RegistryObject<Item> AMBER_BOOTS = ITEMS.register("amber_boots",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
+            () -> new ArmorItem(ModArmorMaterials.AMBER, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
 
     public static final RegistryObject<Item> AMBER_HELMET = ITEMS.register("amber_helmet",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
+            () -> new ArmorItem(ModArmorMaterials.AMBER, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
 
     public static final RegistryObject<Item> AMBER_CHESTPLATE = ITEMS.register("amber_chestplate",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
+            () -> new ArmorItem(ModArmorMaterials.AMBER, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
 
     public static final RegistryObject<Item> AMBER_LEGGINGS = ITEMS.register("amber_leggings",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
+            () -> new ArmorItem(ModArmorMaterials.AMBER, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeTab.FUN_MODE)));
 
 
     public static void register(IEventBus eventBus){
